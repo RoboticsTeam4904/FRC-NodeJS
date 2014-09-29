@@ -1,21 +1,24 @@
-#!!!!!!!!!
-#SWITCH TO
-#  https://www.npmjs.org/package/frc
-#FOR JOYSTICKS
+frc = require 'frc'
+GamePad = require 'node-gamepad'
+#prompt = require 'prompt'
 
-ds = require 'driverstation'
-prompt = require 'prompt'
 
-options =
-	teamID: 4904
+#ds = frc DriverStation: true
 
-ds.start options
+#controller = new GamePad 'logitech/extreme3dpro'
+controller = new GamePad 'microsoft/xbox'
+controller.connect()
 
-ds.on 'connect', ->
-	console.log "connected"
-ds.on 'disconnect', ->
-	console.log "disconnected"
+controller.on 'up:press', () ->
+    console.log 'up'
+controller.on 'down:press', () ->
+    console.log 'down'
 
+#ds.connect()
+
+#console.log(ds.joysticks)
+
+'''
 schema =
 	properties:
 		mode:
@@ -43,3 +46,4 @@ takeInput = () ->
 		takeInput()
 
 takeInput()
+'''
