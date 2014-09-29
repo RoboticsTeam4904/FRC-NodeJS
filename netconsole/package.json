@@ -1,0 +1,10 @@
+{
+  "name": "frc4904-netconsole",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Node.js netconsole for FRC team 4904",
+  "main": "./netconsole.js",
+  "dependencies": {
+    "frcnetconsole": "^1.0.4"
+  }
+}

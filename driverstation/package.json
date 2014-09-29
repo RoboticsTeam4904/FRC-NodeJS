@@ -1,0 +1,11 @@
+{
+  "name": "frc4904-driverstation",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Node.js driverstation for FRC team 4904",
+  "main": "./main.js",
+  "dependencies": {
+    "driverstation": "^0.6.0",
+    "prompt": "^0.2.14"
+  }
+}
